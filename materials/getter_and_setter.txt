@@ -1,0 +1,51 @@
+In JavaScript, getter and setter functions provide a way to access and modify an object's properties.
+These functions enhance contrpl over object properties, allowing additional logic to be executed when getting or setting a property value.
+
+Gutter function
+
+A getter function is called when reading the value of a property.
+It can return the property value or a computed value.
+
+(Ex)
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    get fullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+};
+
+console.log(person.fullName); // John Doe
+
+In the example above, fullName is defined as a getter function.
+Whenever person.fullName is accessed, it returns the combination of firstName and lastName.
+
+
+Setter function 
+
+A setter function is called when setting the value of a property.
+It can perform additional validation or transformation when the value is set.
+
+(Ex)
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    set fullName(name) {
+        const [first, last] = name.split(' ');
+        this.firstName = first;
+        this.lastName = last;
+    }
+};
+
+person.fullName = 'Jane Smith';
+console.log(person.firstName); // Jane
+console.log(person.lastName);  // Smith
+
+In the example above, fullName is defined as a setter function.
+When a new value is assigned to person.fullName, it updates the firstName and lastName
+
+Considerations
+
+- A getter function must return a value and should avoid modifying other object properties internally.
+- A setter function can take only one parameter
+- Both getter and setter can be defined for the same property to manage read and write operations.
