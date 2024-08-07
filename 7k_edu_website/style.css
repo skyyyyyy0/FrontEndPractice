@@ -125,6 +125,10 @@ a{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
+}
+.tutoring_text { 
+    font-size: 4em;
 }
 .tutoring_box_container {
     display: flex;
@@ -135,11 +139,12 @@ a{
     flex: 1;
     margin: 10px;
     padding: 20px;
-    background-color: lightblue;
-    border: 2px solid #007BFF;
+    background-color: white;
     text-align: center;
     font-size: 1.2em;
     border-radius: 8px;
+    background-color: #d49466;
+    line-height: 200%;
 }
 .box img {
     width: 100%;
@@ -151,6 +156,64 @@ a{
 }
 .box p {
     margin-top: 10px;
+}
+
+/* Main3 content */
+.main3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f1e7; /* 배경색 설정 */
+    padding: 20px;
+}
+
+.main3_content {
+    flex: 1;
+    width: 300px;
+    height: 200px;
+    /* padding-left: 100px;
+    padding-right: 10px; */
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* 
+.main3_image img {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+
+} */
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f1b24a; /* 버튼 배경색 */
+    color: white;
+    border: none;
+    border-radius: 25px; /* 버튼 둥근 테두리 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e0a243; /* 버튼 호버 색상 */
 }
 
 
